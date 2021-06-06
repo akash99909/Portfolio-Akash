@@ -28,6 +28,7 @@
     <link href="css/style.css" rel="stylesheet" />
     <link href="css/text.css" rel="stylesheet" />
     <link href="css/button.css" rel="stylesheet" />
+    <link href="css/abcc.css" rel="stylesheet" />
 
     <!-- CSS Skin File -->
     <link href="css/skins/red.css" rel="stylesheet" />
@@ -94,7 +95,27 @@
     <script src="js/modernizr.custom.js"></script>
   </head>
 
-  <body class="portfolio">
+ 
+  <body onclick="myf()" class="portfolio">
+    <div id="loading">
+      <div class="loading">
+        <div class="finger finger-1">
+          <div class="finger-item"><span></span><i></i></div>
+        </div>
+        <div class="finger finger-2">
+          <div class="finger-item"><span></span><i></i></div>
+        </div>
+        <div class="finger finger-3">
+          <div class="finger-item"><span></span><i></i></div>
+        </div>
+        <div class="finger finger-4">
+          <div class="finger-item"><span></span><i></i></div>
+        </div>
+        <div class="last-finger">
+          <div class="last-finger-item"><i></i></div>
+        </div>
+      </div>
+    </div>
     <!-- Live Style Switcher Starts - demo only -->
     <div id="switcher" class="">
       <div class="content-switcher">
@@ -1101,9 +1122,15 @@
     <!-- Main Content Ends -->
 
     <!-- Template JS Files -->
+        <script>
+      var preloader = document.getElementById("loading");
+      function myf() {
+        preloader.style.display = "none";
+      }
+    </script>
     <script src="js/jquery-3.5.0.min.js"></script>
     <script src="js/styleswitcher.js"></script>
-    <script src="js/preloader.min.js"></script>
+    
     <script src="js/fm.revealator.jquery.min.js"></script>
     <script src="js/imagesloaded.pkgd.min.js"></script>
     <script src="js/masonry.pkgd.min.js"></script>
